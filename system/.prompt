@@ -1,0 +1,6 @@
+color_off="\[\033[0m\]"  # Text Reset
+green="\[\033[0;32m\]"   # Green
+
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+export PS1='[\u@\h] \W '$green'$(__git_ps1 "(%s)")'$color_off'\$ '
