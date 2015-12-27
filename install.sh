@@ -1,1 +1,1 @@
-ln -sfv "~/.files/.bash_profile" ~
+ln -sfv ~/.files/.bash_profile ~
