@@ -40,9 +40,8 @@ export DOCKER_CERT_PATH=/Users/ryanoglesby/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
 
-for DOTFILE in `find ~/.files/system`
-do
-  [ -f “$DOTFILE” ] && source “$DOTFILE”
+for DOTFILE in ~/.files/system/.aliases; do
+  [ -f "$DOTFILE" ] && source "$DOTFILE"
 done
 
 
