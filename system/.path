@@ -1,0 +1,5 @@
+prepend-path "/usr/local/bin"
+prepend-path "/Applications/Sublime Text.app/Contents/SharedSupport/bin"
+prepend-path "$HOME/.rvm/bin"
+
+export PATH
