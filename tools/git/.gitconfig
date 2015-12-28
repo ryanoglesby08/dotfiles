@@ -1,0 +1,11 @@
+[alias]
+	st = status
+	pr = pull --rebase
+	pom = push origin master
+[credential]
+	helper = osxkeychain
+[user]
+	name = Ryan Oglesby
+	email = ryan.oglesby08@gmail.com
+[push]
+	default = simple
