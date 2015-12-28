@@ -1,4 +1,3 @@
-
 for DOTFILE in ~/.files/system/.functions; do
   [ -f "$DOTFILE" ] && source "$DOTFILE"
 done
