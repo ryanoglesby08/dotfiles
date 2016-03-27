@@ -3,34 +3,25 @@
 echo "Installing brew cask applications..."
 
 apps=(
-    # alfred
-    # dash
-    # dropbox
-    # firefox
-    # firefox-nightly
-    # flux
-    # glimmerblocker
-    # google-chrome
-    # google-chrome-canary
-    # google-drive
-    # hammerspoon
-    # kaleidoscope
-    # macdown
-    # opera
-    # screenflow
-    # sourcetree
-    # spotify
-    # sublime-text3
-    # transmit
-    # virtualbox
-    # vlc
-    # webstorm
-
-    # My apps
-    Caskroom/cask/atom
+    atom
+    caffeine
+    dropbox
+    evernote
+    firefox
+    google-chrome
+    intellij-idea
+    iterm2
+    rubymine
+    screenhero
+    skype
+    slack
+    spotify
+    virtualbox
+    vlc
+    1password
 )
 
 brew cask install "${apps[@]}"
 brew cask cleanup
 
-echo "Done installing brew cask"
+echo "Done installing brew cask applications"
