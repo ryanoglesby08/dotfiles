@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Installing brew..."
+
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap homebrew/versions
@@ -20,3 +22,6 @@ apps=(
 )
 
 brew install "${apps[@]}"
+brew cleanup
+
+echo "Done installing brew"
