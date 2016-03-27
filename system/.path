@@ -1,4 +1,3 @@
-prepend-path "/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 prepend-path "/sbin"
 prepend-path "/usr/sbin"
 prepend-path "/usr/local/sbin"
