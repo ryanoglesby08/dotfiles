@@ -4,3 +4,4 @@
 
 ~/.files/bootstrap/brew.sh
 ~/.files/bootstrap/brew-cask.sh
+~/.files/bootstrap/ruby.sh

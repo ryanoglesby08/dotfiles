@@ -12,6 +12,7 @@ brew upgrade
 apps=(
     chromedriver
     git
+    gpg
     heroku-toolbelt
     jq
     mysql
