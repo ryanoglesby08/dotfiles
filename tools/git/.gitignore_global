@@ -1,0 +1,16 @@
+# OS generated files #
+######################
+.DS_Store
+
+# IDE generated files #
+######################
+.idea
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# Packages #
+######################
+node_modules

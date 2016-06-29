@@ -9,3 +9,5 @@
 	email = ryan.oglesby08@gmail.com
 [push]
 	default = simple
+[core]
+	excludesfile = ~/.gitignore_global
