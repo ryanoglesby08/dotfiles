@@ -3,6 +3,7 @@
 echo "Linking home directory dotfiles..."
 ln -sfv ~/.files/home/.bash_profile ~
 ln -sfv ~/.files/home/.inputrc ~
+ln -sfv ~/.files/home/.vimrc ~
 
 ln -sfv ~/.files/tools/git/.gitconfig ~
 ln -sfv ~/.files/tools/git/.gitignore_global ~
