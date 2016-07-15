@@ -17,9 +17,6 @@ set mark-symlinked-directories on
 # Match all files
 set match-hidden-files on
 
-# 'Magic Space': Insert a space character then performs a history expansion in the line
-Space: magic-space
-
 # History searching
 "\e[A": history-search-backward
 "\e[B": history-search-forward
