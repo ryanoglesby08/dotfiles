@@ -1,3 +1,5 @@
+# Use alternative to port 22 for ssh connections to work in environments that have
+# blocked that port
 Host gitlab.com
   Hostname altssh.gitlab.com
   Port 443
