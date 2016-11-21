@@ -1,3 +1,4 @@
 [ -f $(brew --prefix)/etc/bash_completion.d/brew_bash_completion.sh ] && source $(brew --prefix)/etc/bash_completion.d/brew_bash_completion.sh
-[ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ] && source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
-[ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ] && source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+
+[ -f $(brew --prefix git)/etc/bash_completion.d/git-completion.bash ] && source $(brew --prefix git)/etc/bash_completion.d/git-completion.bash
+[ -f $(brew --prefix git)/etc/bash_completion.d/git-prompt.sh ] && source $(brew --prefix git)/etc/bash_completion.d/git-prompt.sh
