@@ -11,15 +11,7 @@ brew update
 brew upgrade
 
 apps=(
-    chromedriver
     git
-    gpg
-    heroku-toolbelt
-    jq
-    mysql
-    node
-    postgres
-    svn
     wget
     vim
 )

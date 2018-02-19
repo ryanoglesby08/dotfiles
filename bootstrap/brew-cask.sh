@@ -12,10 +12,6 @@ apps=(
     intellij-idea
     iterm2
     java
-    libreoffice
-    rubymine
-    screenhero
-    skype
     slack
     spotify
     virtualbox
