@@ -4,7 +4,6 @@ prepend-path "/usr/local/sbin"
 prepend-path "/bin"
 prepend-path "/usr/bin"
 prepend-path "/usr/local/bin"
-prepend-path "$HOME/.rvm/bin"
 
 # Remove duplicates (preserving prepended items)
 # Source: http://unix.stackexchange.com/a/40755

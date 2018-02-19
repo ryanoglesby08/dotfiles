@@ -1,5 +1,4 @@
 alias ls="ls -G"
-alias be="bundle exec"
 
 alias home="cd ~"
 alias proj="cd ~/projects"
