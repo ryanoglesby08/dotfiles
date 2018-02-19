@@ -12,5 +12,6 @@ git clone into ~/.files
 Install extra bits of functionality
 
 ```sh
-./extras/ruby/go.sh # Install rvm and sets it up
+./extras/node/go.sh # Install node
+./extras/ruby/go.sh # Install rvm
 ```

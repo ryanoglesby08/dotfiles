@@ -2,12 +2,14 @@
 
 ./install.sh
 
-# Add rvm executable to the path
+echo "Adding rvm executable to the path..."
 prepend-path "$HOME/.rvm/bin"
 
-# Bundler config
+echo "Configuring bundler..."
 mkdir -p $HOME/.bundle && ln -sfv ./bundler/config $HOME/.bundle
 alias be="bundle exec"
 
-# Add rvm init script to bash profile
+echo "Linking rvm init script to bash profile..."
 ln -sfv $HOME/.files/extras/ruby/.bashrc-ruby $HOME
+
+echo "Done installing ruby!"

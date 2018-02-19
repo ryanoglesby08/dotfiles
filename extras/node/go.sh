@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-echo "Updating npm..."
+echo "Installing node, npm, and yarn..."
+brew install node yarn
 
-npm install npm -g
-
+echo "Configuring npm init options..."
 npm set init.author.email "ryan.oglesby08@gmail.com"
 npm set init.author.name "Ryan Oglesby"
 npm set init.license "MIT"
 
-echo "Done updating npm"
+echo "Done installing node!"
