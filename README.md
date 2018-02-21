@@ -3,7 +3,7 @@
 ## Install
 
 ```sh
-curl https://raw.githubusercontent.com/ryanoglesby08/dotfiles/master/go.sh | bash
+curl -sS https://raw.githubusercontent.com/ryanoglesby08/dotfiles/master/go.sh | bash
 ```
 
 ## Extras
