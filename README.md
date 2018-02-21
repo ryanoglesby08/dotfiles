@@ -1,10 +1,9 @@
 # My dotfiles
 
-```sh
-git clone into ~/.files
+## Install
 
-./go.sh # Install from scratch
-./setup_terminal.sh # Just initialize the setup_terminal
+```sh
+curl https://raw.githubusercontent.com/ryanoglesby08/dotfiles/master/go.sh | bash
 ```
 
 ## Extras
@@ -15,3 +14,9 @@ Install extra bits of functionality
 ./extras/node/go.sh # Install node
 ./extras/ruby/go.sh # Install rvm
 ```
+
+## My CLI
+
+Recommended to install [my-cli](https://github.com/ryanoglesby08/my-cli) alongside these dotfiles.
+
+_Node is required_

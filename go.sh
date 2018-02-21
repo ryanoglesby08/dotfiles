@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-~/.files/setup_terminal.sh
+mkdir -p $HOME/.files
+git clone git@github.com:ryanoglesby08/dotfiles.git $HOME/.files
 
-~/.files/bootstrap/brew.sh
-~/.files/bootstrap/brew-cask.sh
+$HOME/.files/setup_terminal.sh
+
+$HOME/.files/bootstrap/brew.sh
+$HOME/.files/bootstrap/brew-cask.sh

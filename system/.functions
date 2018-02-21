@@ -1,24 +1,3 @@
 prepend-path() {
   [ -d "$1" ] && PATH="$1:$PATH"
 }
-
-cp-highlight() {
-  if [ -z "$1" ]
-  then
-    echo "Usage: cp-highlight <syntax>"
-    exit 1
-  fi
-
-  pbpaste | highlight -O rtf --syntax=$1 --style=github --font-size=24 --font=Inconsolata | pbcopy
-}
-
-serve-dir() {
-  if [ -z "$1" ]
-  then
-    echo "Usage: serve-dir <path/to/serve>"
-    exit 1
-  fi
-
-  pushd $1 && sudo python -m SimpleHTTPServer 80
-  popd
-}
