@@ -2,11 +2,11 @@
 
 echo "Linking home directory dotfiles..."
 
-ln -sfv ~/.files/home/.bash_profile ~
-ln -sfv ~/.files/home/.inputrc ~
-ln -sfv ~/.files/home/.vimrc ~
+ln -sfv $HOME/.files/home/.bash_profile $HOME
+ln -sfv $HOME/.files/home/.inputrc $HOME
+ln -sfv $HOME/.files/home/.vimrc $HOME
 
-mkdir -p ~/.ssh && ln -sfv ~/.files/tools/ssh/config ~/.ssh
+mkdir -p $HOME/.ssh && ln -sfv $HOME/.files/tools/ssh/config $HOME/.ssh
 
-ln -sfv ~/.files/tools/git/.gitconfig ~
-ln -sfv ~/.files/tools/git/.gitignore_global ~
+ln -sfv $HOME/.files/tools/git/.gitconfig $HOME
+ln -sfv $HOME/.files/tools/git/.gitignore_global $HOME
