@@ -12,6 +12,7 @@ apps=(
     intellij-idea
     iterm2
     java
+    nordvpn
     slack
     spotify
     virtualbox
