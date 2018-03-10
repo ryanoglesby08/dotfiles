@@ -5,6 +5,7 @@ echo "Installing brew cask applications..."
 apps=(
     atom
     caffeine
+    docker
     dropbox
     evernote
     firefox

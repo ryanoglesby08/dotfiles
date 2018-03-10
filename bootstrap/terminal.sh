@@ -10,3 +10,5 @@ mkdir -p $HOME/.ssh && ln -sfv $HOME/.files/home/ssh/config $HOME/.ssh
 
 ln -sfv $HOME/.files/home/git/.gitconfig $HOME
 ln -sfv $HOME/.files/home/git/.gitignore_global $HOME
+
+echo "Done linking home directory dotfiles."
