@@ -5,7 +5,6 @@ echo "Generating ssh keys..."
 # Follows Github's steps: https://help.github.com/enterprise/2.12/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
 generate_key() {
-  mkdir -p $HOME/.ssh
   ssh-keygen -t rsa -b 4096 -C "ryan.oglesby08@gmail.com"
 
   echo "Adding key to the ssh-agent to store the passphrase..."
@@ -20,6 +19,9 @@ generate_key() {
 
   echo "done!"
 }
+
+# Ensure the .ssh directory exists before starting
+mkdir -p $HOME/.ssh
 
 # Check for existing id_rsa key
 if [[ $(ls $HOME/.ssh | grep ^id_rsa$) ]]; then
