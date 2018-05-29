@@ -4,7 +4,6 @@ echo "Installing brew..."
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew tap homebrew/versions
 brew tap homebrew/services
 
 brew update
