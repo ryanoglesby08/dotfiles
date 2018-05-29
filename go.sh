@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 print_usage() {
   cat <<-EOF
   Usage: go.sh [options...] <command>
