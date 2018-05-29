@@ -18,6 +18,7 @@ apps=(
     spotify
     virtualbox
     vlc
+    webstorm
     1password
 )
 
