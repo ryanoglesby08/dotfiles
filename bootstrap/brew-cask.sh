@@ -3,6 +3,7 @@
 echo "Installing brew cask applications..."
 
 apps=(
+    1password
     atom
     caffeine
     docker
@@ -19,7 +20,7 @@ apps=(
     virtualbox
     vlc
     webstorm
-    1password
+    zoomus
 )
 
 brew cask install "${apps[@]}"
