@@ -7,8 +7,6 @@ apps=(
     atom
     caffeine
     docker
-    dropbox
-    evernote
     firefox
     google-chrome
     intellij-idea
@@ -18,9 +16,9 @@ apps=(
     slack
     spotify
     virtualbox
+    visual-studio-code
     vlc
     webstorm
-    zoomus
 )
 
 brew cask install "${apps[@]}"
