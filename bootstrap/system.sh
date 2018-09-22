@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 
 echo "Updating Mac OS..."
-
 sudo softwareupdate -i -a
 
-echo "Installing XCode command line tools..."
-xcode-select --install
+echo "Checking for Xcode..."
+if xcodebuild -version >/dev/null 2>&1;
+then
+  echo "Found!"
+else
+  echo "Not found. Install Xcode using the App Store first."
+  exit 1
+fi
 
 echo "Configuring Mac OS settings..."
 
