@@ -15,6 +15,8 @@ apps=(
     vim
 )
 
+echo "Installing brew apps: ${apps[@]}..."
+
 brew install "${apps[@]}"
 brew cleanup
 
