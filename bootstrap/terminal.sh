@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 echo "Linking home directory dotfiles..."
 
-ln -sfv $HOME/.files/home/.bash_profile $HOME
+ln -sfv $HOME/.files/home/.zshrc $HOME
 ln -sfv $HOME/.files/home/.inputrc $HOME
 ln -sfv $HOME/.files/home/.vimrc $HOME
 

@@ -7,15 +7,6 @@ alias ls="ls -G"
 alias home="cd ~"
 alias proj="cd ~/projects"
 
-#####################
-# Completion
-#####################
-
-[ -f $(brew --prefix)/etc/bash_completion.d/brew_bash_completion.sh ] && source $(brew --prefix)/etc/bash_completion.d/brew_bash_completion.sh
-
-[ -f $(brew --prefix git)/etc/bash_completion.d/git-completion.bash ] && source $(brew --prefix git)/etc/bash_completion.d/git-completion.bash
-[ -f $(brew --prefix git)/etc/bash_completion.d/git-prompt.sh ] && source $(brew --prefix git)/etc/bash_completion.d/git-prompt.sh
-
 
 #####################
 # Settings
@@ -52,19 +43,19 @@ export PATH
 # Prompt
 #####################
 
-color_off="\[\033[0m\]"  # Text Reset
-green="\[\033[0;32m\]"   # Green
+# see: https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
+[ -f /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh ] && source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 
-export PS1='[\u@\h] \W '$green'$(__git_ps1 "(%s)")'$color_off'\$ '
-
+setopt PROMPT_SUBST
+export PROMPT='[%~] %F{green}$(__git_ps1 " (%s)")%f %# '
 
 #####################
 # Add ons
 #####################
 
-# Load additional sources based on naming convention of .bashrc-<xxx>
-for DOTFILE in ~/.bashrc-*; do
+# Load additional sources based on naming convention of .zshrc-<xxx>
+for DOTFILE in ~/.zshrc-*(.N); do
   [ -f "$DOTFILE" ] && source "$DOTFILE"
 done
