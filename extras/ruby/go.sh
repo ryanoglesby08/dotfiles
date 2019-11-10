@@ -8,6 +8,6 @@ echo "Configuring bundler"
 mkdir -p $HOME/.bundle && ln -sfv $HOME/.files/extras/ruby/bundler/config $HOME/.bundle
 
 echo "Linking rvm init script to bash profile"
-ln -sfv $HOME/.files/extras/ruby/.bashrc-ruby $HOME
+ln -sfv $HOME/.files/extras/ruby/.zshrc-ruby $HOME
 
 echo "Done installing ruby."
