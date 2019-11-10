@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 echo "Updating Mac OS..."
-sudo softwareupdate -i -a
+sudo softwareupdate --install --all --restart
 
 echo "Checking for Xcode..."
 if xcodebuild -version >/dev/null 2>&1;
