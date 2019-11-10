@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 echo "Updating Mac OS..."
 sudo softwareupdate -i -a
