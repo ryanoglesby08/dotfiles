@@ -3,7 +3,7 @@
 ## Install
 
 ```sh
-curl -sS https://raw.githubusercontent.com/ryanoglesby08/dotfiles/master/go.sh | bash -s bootstrap
+curl -sS https://raw.githubusercontent.com/ryanoglesby08/dotfiles/master/go.sh | zsh -s bootstrap
 ```
 
 ## Extras
