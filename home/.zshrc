@@ -56,6 +56,7 @@ export PROMPT='[%~] %F{green}$(__git_ps1 " (%s)")%f %# '
 #####################
 
 # Load additional sources based on naming convention of .zshrc-<xxx>
-for DOTFILE in ~/.zshrc-*(.N); do
+# Do not store secrets or sensitive info in these as they could be checked in. Create a ~/.zshrc-local file for secrets.
+for DOTFILE in ~/.zshrc-*(N); do
   [ -f "$DOTFILE" ] && source "$DOTFILE"
 done

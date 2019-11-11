@@ -1,12 +1,15 @@
 #!/usr/bin/env zsh
 
-echo "Installing node, npm, and yarn..."
+echo "Installing and configuring node..."
 
-brew install node yarn
+$HOME/.files/extras/node/install.sh
 
 echo "Configuring npm init options"
-npm set init.author.email "ryan.oglesby08@gmail.com"
+npm set init.author.email "ryan.oglesby@trunkclub.com"
 npm set init.author.name "Ryan Oglesby"
 npm set init.license "MIT"
+
+echo "Linking nvm init script"
+ln -sfv $HOME/.files/extras/node/.zshrc-node $HOME
 
 echo "Done installing node."
