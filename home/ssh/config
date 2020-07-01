@@ -1,19 +1,25 @@
 # "If you don't want to reenter your passphrase every time you use your SSH key,
 # you can add your key to the SSH agent, which manages your SSH keys and remembers your passphrase."
 # https://help.github.com/enterprise/2.12/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent
-Host *
- AddKeysToAgent yes
- UseKeychain yes
- IdentityFile ~/.ssh/id_rsa
+ Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+
+# Set up an alias for switching between work and personal keys
+Host github-personal
+  Hostname github.com
+  IdentityFile ~/.ssh/id_ed25519.personal
+  IdentitiesOnly Yes
 
 # Use alternative to port 22 for ssh connections to work in environments that have
 # blocked that port (corporate firewalls)
-Host gitlab.com
-  Hostname altssh.gitlab.com
-  Port 443
-  IdentityFile ~/.ssh/id_rsa
+#Host gitlab.com
+#  Hostname altssh.gitlab.com
+#  Port 443
+#  IdentityFile ~/.ssh/id_rsa
 
-Host github.com
-  Hostname ssh.github.com
-  Port 443
-  IdentityFile ~/.ssh/id_rsa
+#Host github.com
+#  Hostname ssh.github.com
+#  Port 443
+#  IdentityFile ~/.ssh/id_rsa
