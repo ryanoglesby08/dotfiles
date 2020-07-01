@@ -17,6 +17,7 @@ generate_key() {
   echo "--> Instructions can be found here: https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/"
 
   read "?Press <enter> to continue... "
+  ssh -T git@github.com
 }
 
 # Ensure the .ssh directory exists before starting
