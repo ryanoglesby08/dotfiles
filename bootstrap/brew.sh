@@ -1,10 +1,18 @@
 #!/usr/bin/env zsh
 
-echo "Installing brew..."
+if command -v brew &> /dev/null
+then
+  echo "Brew already installed."
+else
+  echo "Installing brew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-brew tap homebrew/services
+if ! command -v brew &> /dev/null
+then
+  echo "Brew not installed. Complete all steps to finish the installation, then run this script again."
+  exit
+fi
 
 brew update
 brew upgrade

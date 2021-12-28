@@ -19,13 +19,14 @@ run_bootstrap() {
 
   $HOME/.files/bootstrap/system.sh
 
+  # Terminal setup needs to come first
+  $HOME/.files/bootstrap/terminal.sh
+
   $HOME/.files/bootstrap/ssh-keys.sh
   $HOME/.files/bootstrap/brew.sh
   $HOME/.files/bootstrap/brew-cask.sh
 
   $HOME/.files/bootstrap/directories.sh
-
-  $HOME/.files/bootstrap/terminal.sh
 }
 
 run_update() {
