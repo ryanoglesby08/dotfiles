@@ -1,8 +1,12 @@
 #!/usr/bin/env zsh
 
-echo "Installing nvm..."
+# Fast Node Manager: https://github.com/Schniz/fnm
 
-# https://github.com/nvm-sh/nvm#installation-and-update
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+echo "Installing fnm and Node.js LTS version..."
 
-echo "Done installing rvm"
+brew install fnm
+eval "$(fnm env)"
+
+fnm install --lts
+
+echo "Done installing fnm"
