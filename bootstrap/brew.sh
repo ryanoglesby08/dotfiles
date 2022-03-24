@@ -28,4 +28,7 @@ echo "Installing brew apps: ${apps[@]}..."
 brew install "${apps[@]}"
 brew cleanup
 
+echo "Linking brew shell setup"
+ln -sfv $HOME/.files/bootstrap/.zshrc-brew $HOME
+
 echo "Done installing brew"
