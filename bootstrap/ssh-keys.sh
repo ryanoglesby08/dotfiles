@@ -9,7 +9,7 @@ generate_key() {
 
   echo "Adding key to the ssh-agent to store the passphrase..."
   eval "$(ssh-agent -s)"
-  ssh-add -K $HOME/.ssh/id_ed25519
+  ssh-add --apple-use-keychain $HOME/.ssh/id_ed25519
 
   pbcopy < $HOME/.ssh/id_ed25519.pub
   echo "The contents of id_ed25519.pub have been copied to the clipboard."
