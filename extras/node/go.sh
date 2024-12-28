@@ -12,9 +12,8 @@ fnm install --lts
 echo "Done installing fnm"
 
 echo "Configuring npm init options"
-npm set init.author.email "ryan.oglesby08@gmail.com"
-npm set init.author.name "Ryan Oglesby"
-npm set init.license "MIT"
+npm config set init-author-email "ryan.oglesby08@gmail.com"
+npm config set init-author-name "Ryan Oglesby"
 
 echo "Linking fnm shell setup"
 ln -sfv $HOME/.files/extras/node/.zshrc-node $HOME
