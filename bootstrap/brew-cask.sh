@@ -10,7 +10,7 @@ apps=(
 
 echo "Installing brew cask applications: ${apps[@]}..."
 
-brew cask install "${apps[@]}"
+brew install --cask "${apps[@]}"
 brew cleanup
 
 echo "Done installing brew cask applications"
